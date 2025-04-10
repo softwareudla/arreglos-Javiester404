@@ -159,24 +159,26 @@ int main()
 
         case 6:
             printf("\nAprobados y reprobados por materia:\n");
+            
             for (int i = 0; i < cont1; i++)
             {
                 int aprobados = 0;
                 int reprobados = 0;
-
+                printf("\nMateria: %s\n", materias[i]);
+                printf("\nEstudiante\t\tEstado\n");
                 for (int j = 0; j < cont; j++)
                 {
                     if (calificaciones[i][j] >= 6)
                     {
+                        printf("%s\t\tAprobado\n",estudiante[j]);
                         aprobados++;
                     }
                     else
                     {
+                        printf("%s\t\tReprobado\n",estudiante[j]);
                         reprobados++;
                     }
                 }
-
-                printf("\nMateria: %s\n", materias[i]);
                 printf("Estudiantes aprobados: %d\n", aprobados);
                 printf("Estudiantes reprobados: %d\n", reprobados);
             }
