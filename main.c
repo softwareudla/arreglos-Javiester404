@@ -95,6 +95,7 @@ int main()
 
             calificaciones[num_materia][num_estudiante] = nota;
             printf("Nota registrada con exito\n");
+            nota=0;
             break;
 
         case 4:
